@@ -1,3 +1,3 @@
 export const App = () => {
-  return <>test 123</>;
+  return <>test react app template</>;
 };
