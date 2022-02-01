@@ -1,33 +1,36 @@
-import { useState, useEffect } from 'react';
+import { useReducer } from 'react';
+
+function countReducer(state, action) {
+  switch (action.type) {
+    case 'increment':
+      return { ...state, count: state.count + action.payload };
+    case 'decrement':
+      return { ...state, count: state.count - action.payload };
+    default:
+      throw new Error(`Unsupported action type ${action.type}`);
+  }
+}
 
 export default function Counter({ step }) {
-  const [counter, setCounter] = useState(3);
-  const [counterX, setCounterX] = useState(0);
-
-  const handleIncrement = () => {
-    setCounter(prev => prev + step);
-    setCounterX(prev => prev + 1);
-  };
-
-  const handleDecrement = () => {
-    setCounter(prev => prev - step);
-  };
-
-  useEffect(() => {
-    console.log('UseEffect works ' + Date.now());
-  }, [counterX]);
+  const [state, dispatch] = useReducer(countReducer, { count: 0 });
 
   return (
     <>
       <div>
-        <button type="button" onClick={handleDecrement}>
-          Decrement by {step}
+        <button
+          type="button"
+          onClick={() => dispatch({ type: 'decrement', payload: 1 })}
+        >
+          Decrement
         </button>
         <span>
-          <b>main counter: {counter},</b> increment click counter{counterX}
+          <b>main counter: {state.count}</b>
         </span>
-        <button type="button" onClick={handleIncrement}>
-          Increment by {step}
+        <button
+          type="button"
+          onClick={() => dispatch({ type: 'increment', payload: 1 })}
+        >
+          Increment
         </button>
       </div>
     </>
