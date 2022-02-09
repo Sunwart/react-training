@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/react-training/static/css/main.f812f8bc.css",
-    "main.js": "/react-training/static/js/main.b2a71408.js",
+    "main.css": "/react-training/static/css/main.eddd1cfd.css",
+    "main.js": "/react-training/static/js/main.889b8ef9.js",
     "static/js/787.a6d51bb8.chunk.js": "/react-training/static/js/787.a6d51bb8.chunk.js",
     "static/media/q.png": "/react-training/static/media/q.3c9231af88f6e33105a0.png",
     "static/media/sad-kawaii.png": "/react-training/static/media/sad-kawaii.03b44cc031dcb8f0b1bf.png",
     "index.html": "/react-training/index.html",
-    "main.f812f8bc.css.map": "/react-training/static/css/main.f812f8bc.css.map",
-    "main.b2a71408.js.map": "/react-training/static/js/main.b2a71408.js.map",
+    "main.eddd1cfd.css.map": "/react-training/static/css/main.eddd1cfd.css.map",
+    "main.889b8ef9.js.map": "/react-training/static/js/main.889b8ef9.js.map",
     "787.a6d51bb8.chunk.js.map": "/react-training/static/js/787.a6d51bb8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f812f8bc.css",
-    "static/js/main.b2a71408.js"
+    "static/css/main.eddd1cfd.css",
+    "static/js/main.889b8ef9.js"
   ]
 }
