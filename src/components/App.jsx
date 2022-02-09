@@ -13,26 +13,15 @@ export const App = () => {
       <Navigation />
 
       <Switch>
-        <Route path="/" exact>
-          <section className="Container">
-            <Clock />
-          </section>
-          <section className="Container">
-            <Form />
-          </section>
-          <section className="Container">
-            <Counter step={3} />
-          </section>
-        </Route>
         <Route path="/pokemon">
           <section className="Container">
             <h2>POKEMONS</h2>
             <Pokemon />
           </section>
         </Route>
-        <Route path="/videos">
-          <Videos />
-        </Route>
+
+        <Route path="/videos" component={Videos} />
+
         <Route path="/colors">
           <section className="Container">
             <ColorPicker
@@ -47,9 +36,22 @@ export const App = () => {
             />
           </section>
         </Route>
-        <Route>
-          <p>Oooooooooooooooooops! 404 ERROR: page not found</p>
+
+        <Route path="/">
+          <section className="Container">
+            <Clock />
+          </section>
+          <section className="Container">
+            <Form />
+          </section>
+          <section className="Container">
+            <Counter step={3} />
+          </section>
         </Route>
+
+        {/* <Route>
+          <p>Oooooooooooooooooops! 404 ERROR: page not found</p>
+        </Route> */}
       </Switch>
     </>
   );
