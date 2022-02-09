@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/react-training/static/css/main.eddd1cfd.css",
-    "main.js": "/react-training/static/js/main.889b8ef9.js",
-    "static/js/787.a6d51bb8.chunk.js": "/react-training/static/js/787.a6d51bb8.chunk.js",
+    "main.css": "/react-training/static/css/main.bf581d4a.css",
+    "main.js": "/react-training/static/js/main.2dac74c7.js",
+    "static/js/787.70d895be.chunk.js": "/react-training/static/js/787.70d895be.chunk.js",
     "static/media/q.png": "/react-training/static/media/q.3c9231af88f6e33105a0.png",
     "static/media/sad-kawaii.png": "/react-training/static/media/sad-kawaii.03b44cc031dcb8f0b1bf.png",
     "index.html": "/react-training/index.html",
-    "main.eddd1cfd.css.map": "/react-training/static/css/main.eddd1cfd.css.map",
-    "main.889b8ef9.js.map": "/react-training/static/js/main.889b8ef9.js.map",
-    "787.a6d51bb8.chunk.js.map": "/react-training/static/js/787.a6d51bb8.chunk.js.map"
+    "main.bf581d4a.css.map": "/react-training/static/css/main.bf581d4a.css.map",
+    "main.2dac74c7.js.map": "/react-training/static/js/main.2dac74c7.js.map",
+    "787.70d895be.chunk.js.map": "/react-training/static/js/787.70d895be.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eddd1cfd.css",
-    "static/js/main.889b8ef9.js"
+    "static/css/main.bf581d4a.css",
+    "static/js/main.2dac74c7.js"
   ]
 }
