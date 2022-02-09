@@ -1,0 +1,12 @@
+.navLink {
+  display: block;
+  color: rgb(141, 16, 0);
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 8px;
+  text-decoration: none;
+}
+
+.activeLink {
+  color: rgb(255, 186, 161);
+}
