@@ -1,4 +1,2 @@
-const INCREMENT = 'counter/Increment';
-const DECREMENT = 'counter/Increment';
-
-export default { INCREMENT, DECREMENT };
+export const INCREMENT = 'counter/Increment';
+export const DECREMENT = 'counter/Increment';

@@ -1,12 +1,12 @@
 import { combineReducers } from 'redux';
-import actionTypes from './counter-types';
+import { INCREMENT, DECREMENT } from './counter-types';
 
 const valueReducer = (state = 10, action) => {
   switch (action.type) {
-    case actionTypes.INCREMENT:
+    case INCREMENT:
       return state + action.payload;
 
-    case actionTypes.DECREMENT:
+    case DECREMENT:
       return state - action.payload;
 
     default:
