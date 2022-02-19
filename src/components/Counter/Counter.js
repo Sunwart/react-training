@@ -6,13 +6,13 @@ function Counter({ value, onIncrement, onDecrement }) {
     <>
       <div>
         <button type="button" onClick={onDecrement}>
-          Decrement
+          - - - -
         </button>
         <span>
           <b> {value} </b>
         </span>
         <button type="button" onClick={onIncrement}>
-          Increment
+          + + +
         </button>
       </div>
     </>
