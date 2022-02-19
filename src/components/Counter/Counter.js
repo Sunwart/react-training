@@ -1,38 +1,33 @@
-import { useReducer } from 'react';
+import { connect } from 'react-redux';
+import * as actions from '../../redux/actions';
 
-function countReducer(state, action) {
-  switch (action.type) {
-    case 'increment':
-      return { ...state, count: state.count + action.payload };
-    case 'decrement':
-      return { ...state, count: state.count - action.payload };
-    default:
-      throw new Error(`Unsupported action type ${action.type}`);
-  }
-}
-
-export default function Counter({ step }) {
-  const [state, dispatch] = useReducer(countReducer, { count: 0 });
-
+function Counter({ value, onIncrement, onDecrement }) {
   return (
     <>
       <div>
-        <button
-          type="button"
-          onClick={() => dispatch({ type: 'decrement', payload: 1 })}
-        >
+        <button type="button" onClick={onDecrement}>
           Decrement
         </button>
         <span>
-          <b>main counter: {state.count}</b>
+          <b> {value} </b>
         </span>
-        <button
-          type="button"
-          onClick={() => dispatch({ type: 'increment', payload: 1 })}
-        >
+        <button type="button" onClick={onIncrement}>
           Increment
         </button>
       </div>
     </>
   );
 }
+
+const mapStatetoProps = state => {
+  return { value: state.counterValue };
+};
+
+const mapDipatchToProps = dispatch => {
+  return {
+    onIncrement: () => dispatch(actions.increment(5)),
+    onDecrement: () => dispatch(actions.decrement(5)),
+  };
+};
+
+export default connect(mapStatetoProps, mapDipatchToProps)(Counter);
