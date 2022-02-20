@@ -45,7 +45,7 @@ export const App = () => {
             <Form />
           </section>
           <section className="Container">
-            <Counter step={3} />
+            <Counter />
           </section>
         </Route>
 

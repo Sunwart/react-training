@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import * as actions from '../../redux/counter/counter-actions';
+import actions from '../../redux/counter/counter-actions';
 
 function Counter({ value, step, onIncrement, onDecrement }) {
   return (
