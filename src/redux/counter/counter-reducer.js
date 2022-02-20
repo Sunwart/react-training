@@ -1,7 +1,6 @@
 import { combineReducers } from 'redux';
 import { createReducer } from '@reduxjs/toolkit';
-
-import actions from './counter-actions';
+import * as actions from './counter-actions';
 
 const valueReducer = createReducer(-13, {
   [actions.increment]: (state, action) => state + action.payload,
